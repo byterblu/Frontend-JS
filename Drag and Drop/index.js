@@ -3,13 +3,10 @@ const dropZone = document.getElementById("dropZone")
 
 
 
-// dragElements.querySelectorAll("p")
-
 const draggableElements = dragElements.children
 
 let dragginElement 
 let dragginElementParent
-let OrdenadoDeElementos = dragElements.children
 
 for(let i = 0; i < draggableElements.length; i++){
     const element = draggableElements[i];
@@ -23,22 +20,13 @@ for(let i = 0; i < draggableElements.length; i++){
         
     }
     
-    // element.ondragend = (event) =>{
-       
-    // }
-
     element.ondragend = (event) =>{
         dragginElementParent = event.target
         if(dragginElementParent.parentNode!==dropZone){
             dragElements.appendChild(dragginElement)
         } 
 
-    
     }
-
-
-    
-    
 
 
 }
