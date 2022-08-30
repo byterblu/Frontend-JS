@@ -58,3 +58,5 @@ dragElements.ondrop =(event) =>{
     dragElements.appendChild(dragginElement)
     dragElements.style.backgroundColor = "transparent"
 }
+
+//listas con reordenacion automatica
