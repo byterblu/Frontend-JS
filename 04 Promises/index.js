@@ -21,9 +21,9 @@
 const characters = document.getElementById("characters")
 
 const createCard = (character)=>{
-    const article =document.createElement("article")
+    const article = document.createElement("article")
     const p = document.createElement("p")
-    p.innerText = characters.name
+    p.innerText = character.name
     const img = document.createElement("img")
     img.src = character.image
     
@@ -41,7 +41,7 @@ fetch("https://rickandmortyapi.com/api/character") //fetch -> ve y traeme algo
     console.log("Body",body)
     const characters = body.results
 
-    characters.array.forEach(character => {
+    characters.forEach(character => {
         createCard(character)
     });
 
