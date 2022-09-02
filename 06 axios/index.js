@@ -1,3 +1,5 @@
+
+
 axios.get("https://rickandmortyapi.com/api/character")
 .then((data)=>{
     console.log(response.data)
